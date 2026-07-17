@@ -14,6 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jeshuaherreraportfolio.vercel.app"),
   title: "Jeshua Herrera — Developer Portfolio",
   description: "CS student building practical software in AI, security & data.",
   icons: {
