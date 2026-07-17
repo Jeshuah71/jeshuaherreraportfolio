@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode variables */
+:root {
+  --color-canvas: #f7f8fa;
+  --color-ink: #11161e;
+  --color-card: #ffffff;
+  --color-border: #e6e9ef;
+}
+
+/* Dark mode variables — flips automatically when .dark is on <html> */
+.dark {
+  --color-canvas: #0f1117;
+  --color-ink: #e8edf3;
+  --color-card: #161b25;
+  --color-border: #252e3f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
